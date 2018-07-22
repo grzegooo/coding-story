@@ -1,0 +1,19 @@
+# This will be a Roll the dice simulator
+
+import random
+
+print("Do you want to throw a dice? y/n")
+
+x = input()
+
+def throw():
+    y = random.randrange(1, 6)
+    return y
+
+while x == "y":
+    y = throw()
+    print("You throwed", y)
+    print("Do you want to throw again? y/n")
+    x = input()
+else:
+    pass
