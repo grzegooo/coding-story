@@ -1,0 +1,21 @@
+"""This is the simple guess the number game"""
+
+import random
+
+print("Let'splay a game! Guess the number from 1 to 999")
+
+x = random.randrange(1, 999) #chooses the random number
+
+y = int(input("Give you number: ")) #user input
+
+while x != y:
+    if x > y:
+        print("Your number is too low")
+        y = int(input("Give you number again: "))
+        pass
+    else:
+        print("Your number is too high")
+        y = int(input("Give you number again: "))
+        pass
+else:
+    print("Lucky you! Perfect match.")
