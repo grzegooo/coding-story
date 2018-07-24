@@ -7,12 +7,45 @@ print("Do you want to throw a dice? y/n")
 x = input()
 
 def throw():
+    """Picking up the random number from 1 to 6"""
     y = random.randrange(1, 6)
     return y
 
+list = ['','--------\n'
+         '|      |\n'
+         '|   o  |\n'
+         '|      |\n'
+         '--------\n',
+        '--------\n'
+        '|   o  |\n'
+        '|   o  |\n'
+        '|      |\n'
+        '--------\n',
+        '--------\n'
+        '|   o  |\n'
+        '|   o  |\n'
+        '|   o  |\n'
+        '--------\n',
+        '--------\n'
+        '| o  o |\n'
+        '|      |\n'
+        '| o  o |\n'
+        '--------\n',
+        '--------\n'
+        '| o  o |\n'
+        '|  o   |\n'
+        '| o  o |\n'
+        '--------\n',
+        '--------\n'
+        '| o  o |\n'
+        '| o  o |\n'
+        '| o  o |\n'
+        '--------\n']
+
 while x == "y":
     y = throw()
-    print("You throwed", y)
+    z = list[y]
+    print("You throwed\n", z)
     print("Do you want to throw again? y/n")
     x = input()
 else:
