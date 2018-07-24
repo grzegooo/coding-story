@@ -1,0 +1,8 @@
+"""This program checks whether the inputted word is a palindrome"""
+
+word = input("Please type your word: ")
+
+if str(word) == str(word)[::-1]:
+    print("Yes, it is!")
+else:
+    print("Nope")
